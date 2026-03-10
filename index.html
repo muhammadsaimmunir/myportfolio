@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium portfolio of Muhammad Saim - Full-Stack Developer, MERN Specialist, and Web Engineer. Showcasing modern web projects and expertise.">
+    <meta name="keywords" content="portfolio, web developer, frontend, backend, MERN, react, node.js">
+    <meta name="author" content="Muhammad Saim">
+    <meta name="theme-color" content="#1e3a8a">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourportfolio.com">
+    <meta property="og:title" content="Muhammad Saim - Full-Stack Developer">
+    <meta property="og:description" content="Premium portfolio showcasing full-stack web development projects and expertise.">
+    <meta property="og:image" content="img/logo.png">
+    
+    <title>Muhammad Saim | Full-Stack Developer</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <img src="img/logo.png" alt="Muhammad Saim Logo" class="logo-img">
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Nav Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active" data-section="hero"><i class="fas fa-home"></i><span>Home</span></a></li>
+                <li><a href="#about" class="nav-link" data-section="about"><i class="fas fa-user"></i><span>About</span></a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills"><i class="fas fa-code"></i><span>Skills</span></a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects"><i class="fas fa-folder"></i><span>Projects</span></a></li>
+                <li><a href="#education" class="nav-link" data-section="education"><i class="fas fa-graduation-cap"></i><span>Education</span></a></li>
+                <li><a href="#certifications" class="nav-link" data-section="certifications"><i class="fas fa-certificate"></i><span>Certifications</span></a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="container">
+                <div class="hero-content">
+                <div class="hero-left">
+                    <!-- Hero Text -->
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="gradient-text">Muhammad Saim</span> Munir
+                        </h1>
+                        <div class="typing-container">
+                            <span class="typing-text"></span>
+                            <span class="typing-cursor"></span>
+                        </div>
+                        <p class="hero-description">
+                            Information Technology student passionate about UI/UX design, Android development, and cybersecurity. I transform innovative ideas into practical digital solutions through creative design and technical development. Currently expanding expertise in AI-driven solutions.
+                        </p>
+
+                        <!-- CTA Buttons -->
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="fas fa-folder"></i> View Projects
+                            </a>
+                            <a href="mailto:saimmuhammad982@gmail.com" class="btn btn-secondary">
+                                <i class="fas fa-comments"></i> Get In Touch
+                            </a>
+                        </div>
+
+                        <!-- Stats -->
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <div class="stat-number" data-target="3">0</div>
+                                <div class="stat-label">Featured Projects</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-target="6">0</div>
+                                <div class="stat-label">Certifications</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-target="8">0</div>
+                                <div class="stat-label">Technical Skills</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number" data-target="10">0</div>
+                                <div class="stat-label">Tools & Tech</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <!-- Profile Photo -->
+                    <div class="hero-photo">
+                        <img src="img/MyPhoto.png" alt="Muhammad Saim Profile Photo" class="profile-img">
+                    </div>
+
+                    <!-- Availability Badge -->
+                    <div class="availability-badge">
+                        <span class="badge-dot"></span>
+                        Available for Work
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm an Information Technology student pursuing my Bachelor's degree from Sindh Madressatul Islam University, Karachi. I'm passionate about transforming innovative ideas into practical digital solutions through creative design, technical development, and data-driven thinking.
+                        </p>
+                        <p>
+                            My expertise spans UI/UX design, Android application development, web technologies, and I'm actively expanding my knowledge in Cybersecurity and Artificial Intelligence. I continuously enhance my skills through professional platforms like Coursera, DigiSkills, and the Saylani Mass IT Training Program, staying updated with the latest industry trends and best practices.
+                        </p>
+                    </div>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <label>Location</label>
+                            <p>Karachi, Pakistan</p>
+                        </div>
+                        <div class="info-item">
+                            <label>Email</label>
+                            <p><a href="mailto:saimmuhammad982@gmail.com">saimmuhammad982@gmail.com</a></p>
+                        </div>
+                        <div class="info-item">
+                            <label>LinkedIn</label>
+                            <p><a href="https://www.linkedin.com/in/muhammadsaimmunir" target="_blank" rel="noopener noreferrer">Muhammad Saim Munir</a></p>
+                        </div>
+                        <div class="info-item">
+                            <label>Status</label>
+                            <p>Currently Studying - Open to Opportunities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <!-- Technical Skills -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Technical Skills</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Android Development</span>
+                            <span class="skill-tag">Web Development</span>
+                            <span class="skill-tag">Cybersecurity Fundamentals</span>
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">AI Implementation</span>
+                        </div>
+                    </div>
+
+                    <!-- Design & Prototyping -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Design & Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Prototyping</span>
+                            <span class="skill-tag">User Research</span>
+                            <span class="skill-tag">Wireframing</span>
+                            <span class="skill-tag">Visual Design</span>
+                            <span class="skill-tag">UX Strategy</span>
+                        </div>
+                    </div>
+
+                    <!-- Development -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML5 & CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Android Studio</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Backend Integration</span>
+                        </div>
+                    </div>
+
+                    <!-- Digital Marketing & Business -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Marketing & Growth</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Digital Marketing</span>
+                            <span class="skill-tag">Social Media Growth</span>
+                            <span class="skill-tag">Content Strategy</span>
+                            <span class="skill-tag">Freelancing</span>
+                            <span class="skill-tag">Online Business</span>
+                            <span class="skill-tag">Brand Strategy</span>
+                        </div>
+                    </div>
+
+                    <!-- Data & Analytics -->
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Data & Analytics</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Data Analysis</span>
+                            <span class="skill-tag">Data Science</span>
+                            <span class="skill-tag">Data Visualization</span>
+                            <span class="skill-tag">Analytics Tools</span>
+                            <span class="skill-tag">Statistical Analysis</span>
+                            <span class="skill-tag">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+
+                <!-- Filter Buttons -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="android">Android</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: Proctor Hub -->
+                    <div class="project-card" data-category="design">
+                        <div class="project-image">
+                            <img src="img/proctorhub.png" alt="Proctor Hub - UI/UX Platform">
+                            <div class="project-badge">Featured</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Proctor Hub</h3>
+                            <p class="project-description">A UI/UX platform for online examination systems designed to improve digital exam experiences through intuitive and user-centered design.</p>
+                            <div class="project-tech">
+                                <span>UI/UX Design</span>
+                                <span>Figma</span>
+                                <span>User Research</span>
+                                <span>Prototyping</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-eye"></i> View Design</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: WeProtect -->
+                    <div class="project-card" data-category="android">
+                        <div class="project-image">
+                            <img src="img/weprotect.png" alt="WeProtect - Security Tool">
+                            <div class="project-badge">Featured</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">WeProtect</h3>
+                            <p class="project-description">A mobile verification and security-focused tool designed to help users securely verify important digital information. Presented at the Sindh Youth Club Festival.</p>
+                            <div class="project-tech">
+                                <span>Android</span>
+                                <span>Java</span>
+                                <span>Security</span>
+                                <span>Android Studio</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-mobile-alt"></i> App Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Blood Bank App -->
+                    <div class="project-card" data-category="android">
+                        <div class="project-image">
+                            <img src="img/bloodbank.png" alt="Blood Bank Android App">
+                            <div class="project-badge">Featured</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Blood Bank Application</h3>
+                            <p class="project-description">Developed a team-based Android application to connect blood donors and recipients, improving access to emergency blood donation services.</p>
+                            <div class="project-tech">
+                                <span>Android</span>
+                                <span>Java</span>
+                                <span>Firebase</span>
+                                <span>Teamwork</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-heartbeat"></i> Project Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-content">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-details">
+                            <h3>Bachelor of Science in Information Technology (BSIT)</h3>
+                            <p class="education-school">Sindh Madressatul Islam University</p>
+                            <p class="education-year">Currently Enrolled</p>
+                            <p class="education-description">Pursuing comprehensive IT education with focus on software development, design, and emerging technologies including cybersecurity and artificial intelligence.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="education-details">
+                            <h3>Intermediate</h3>
+                            <p class="education-school">New Fazaia Intermediate College</p>
+                            <p class="education-year">Completed</p>
+                            <p class="education-description">Completed intermediate studies with focus on science and technology stream, building foundation for higher education.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-details">
+                            <h3>Matriculation</h3>
+                            <p class="education-school">Green Flag Public School</p>
+                            <p class="education-year">Completed</p>
+                            <p class="education-description">Successfully completed primary and secondary education with strong academic performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications section">
+            <div class="container">
+                <h2 class="section-title">Certifications & Achievements</h2>
+                <div class="certifications-grid">
+                    <div class="cert-card">
+                        <i class="fas fa-award"></i>
+                        <h3>UI/UX Designing</h3>
+                        <p>Saylani Mass IT Training Program</p>
+                        <span class="cert-year">Nov 2024</span>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Data Science & Analytics</h3>
+                        <p>HP LIFE</p>
+                        <span class="cert-year">Oct 2025</span>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Android App Capstone</h3>
+                        <p>Meta</p>
+                        <span class="cert-year">Nov 2023</span>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Google Data Analytics</h3>
+                        <p>Google (Coursera)</p>
+                        <span class="cert-year">Nov 2023</span>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Digital Marketing</h3>
+                        <p>DigiSkills</p>
+                        <span class="cert-year">Oct 2023</span>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Freelancing Essentials</h3>
+                        <p>DigiSkills</p>
+                        <span class="cert-year">Oct 2023</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Let's Collaborate</h3>
+                        <p>I'm passionate about creating innovative digital solutions. Whether you have a project in mind or just want to discuss ideas, feel free to reach out!</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Karachi, Pakistan</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:saimmuhammad982@gmail.com">saimmuhammad982@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <h4>Status</h4>
+                                    <p>Open to Opportunities & Collaborations</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials">
+                            <a href="https://www.linkedin.com/in/muhammadsaimmunir" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:saimmuhammad982@gmail.com" class="social-icon" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Muhammad Saim Munir. All rights reserved.</p>
+            <button class="back-to-top" id="backToTop">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script>
+        // ============================================
+        // 1. LOADER - Hide on Page Load
+        // ============================================
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            if (loader) {
+                loader.style.display = 'none';
+            }
+        });
+
+        // ============================================
+        // 2. NAVIGATION - Smooth Scroll & Active Link
+        // ============================================
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('.section');
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        const navbar = document.getElementById('navbar');
+
+        // Hamburger Menu Toggle
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close menu on link click
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+
+                // Update active link
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+
+        // Scroll Spy - Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-section') === current) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Navbar shadow on scroll
+            if (window.pageYOffset > 50) {
+                navbar.style.boxShadow = '0 2px 10px rgba(30, 58, 138, 0.1)';
+            } else {
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // ============================================
+        // 3. TYPING EFFECT - Hero Section
+        // ============================================
+        const roles = [
+            'UI/UX Designer',
+            'Android Developer',
+            'Cybersecurity Enthusiast',
+            'Tech Innovator'
+        ];
+        const typingText = document.querySelector('.typing-text');
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentRole = roles[roleIndex];
+            
+            if (isDeleting) {
+                charIndex--;
+            } else {
+                charIndex++;
+            }
+
+            typingText.textContent = currentRole.substring(0, charIndex);
+
+            let speed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentRole.length) {
+                speed = 1000; // Pause before deleting
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                speed = 500; // Pause before typing next role
+            }
+
+            setTimeout(type, speed);
+        }
+
+        type();
+
+        // ============================================
+        // 4. SCROLL REVEAL - Intersection Observer
+        // ============================================
+        const revealElements = document.querySelectorAll('.section, .project-card, .timeline-item, .skill-category, .education-item, .cert-card');
+
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const reveal = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal');
+                    reveal.unobserve(entry.target);
+                }
+            });
+        }, revealOptions);
+
+        revealElements.forEach(el => reveal.observe(el));
+
+        // ============================================
+        // 5. STAT COUNTERS - Animated Numbers
+        // ============================================
+        const stats = document.querySelectorAll('.stat-number');
+        let counted = false;
+
+        function animateCounters() {
+            stats.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                let current = 0;
+                const increment = target / 30; // 30 frames animation
+
+                const counter = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        stat.textContent = target;
+                        clearInterval(counter);
+                    } else {
+                        stat.textContent = Math.floor(current);
+                    }
+                }, 50);
+            });
+        }
+
+        // Trigger counter animation when hero section is in view
+        const heroSection = document.getElementById('hero');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !counted) {
+                    counted = true;
+                    animateCounters();
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counterObserver.observe(heroSection);
+
+        // ============================================
+        // 6. PROJECT FILTER
+        // ============================================
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        const showMoreBtn = document.getElementById('showMoreBtn');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                // Filter projects
+                projectCards.forEach((card, index) => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.style.display = 'block';
+                        setTimeout(() => card.classList.add('reveal'), 10);
+                    } else {
+                        card.style.display = 'none';
+                        card.classList.remove('reveal');
+                    }
+                });
+
+                // Check if more projects need to be shown
+                updateShowMoreButton();
+            });
+        });
+
+        function updateShowMoreButton() {
+            const visibleCards = Array.from(projectCards).filter(card => card.style.display !== 'none');
+            if (visibleCards.length > 6) {
+                showMoreBtn.style.display = 'inline-flex';
+            } else {
+                showMoreBtn.style.display = 'none';
+            }
+        }
+
+        updateShowMoreButton();
+
+        // Show more projects
+        if (showMoreBtn) {
+            showMoreBtn.addEventListener('click', () => {
+                const hiddenCards = Array.from(projectCards).filter(
+                    card => card.style.display !== 'none' && !card.classList.contains('show')
+                );
+                
+                hiddenCards.slice(0, 2).forEach(card => {
+                    card.classList.add('show');
+                });
+
+                if (hiddenCards.length <= 2) {
+                    showMoreBtn.style.display = 'none';
+                }
+            });
+        }
+
+        // ============================================
+        // 7. CONTACT FORM VALIDATION
+        // ============================================
+        const contactForm = document.getElementById('contactForm');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            let isValid = true;
+
+            // Clear previous errors
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('messageError').textContent = '';
+
+            // Validate name
+            if (name === '') {
+                document.getElementById('nameError').textContent = 'Name is required';
+                isValid = false;
+            }
+
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === '') {
+                document.getElementById('emailError').textContent = 'Email is required';
+                isValid = false;
+            } else if (!emailRegex.test(email)) {
+                document.getElementById('emailError').textContent = 'Please enter a valid email';
+                isValid = false;
+            }
+
+            // Validate message
+            if (message === '') {
+                document.getElementById('messageError').textContent = 'Message is required';
+                isValid = false;
+            }
+
+            if (isValid) {
+                // Show success message
+                contactForm.reset();
+                alert('Thank you! Your message has been sent successfully.');
+                // In production, you would send this data to a server
+            }
+        });
+
+        // ============================================
+        // 8. BACK TO TOP BUTTON
+        // ============================================
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'flex';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // ============================================
+        // 9. SMOOTH SCROLL FOR ALL LINKS
+        // ============================================
+        document.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
